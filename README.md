@@ -11,8 +11,6 @@
 ## 📦 CDN으로 불러오기
 
 ```html
-html
-복사편집
 <!-- 최신 버전 -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -25,8 +23,6 @@ html
 ### 1. 문서 준비 이벤트
 
 ```jsx
-javascript
-복사편집
 $(document).ready(function () {
   // 문서가 로드된 후 실행
 });
@@ -36,8 +32,6 @@ $(document).ready(function () {
 ### 2. 선택자
 
 ```jsx
-javascript
-복사편집
 $("#id")        // ID 선택
 $(".class")     // 클래스 선택
 $("div")        // 태그 선택
@@ -52,8 +46,6 @@ $("*")          // 전체 선택
 ### ✅ 1. HTML/텍스트 조작
 
 ```jsx
-javascript
-복사편집
 $("#title").text("새 제목");      // 텍스트 변경
 $("#title").html("<b>굵은 글씨</b>"); // HTML 변경
 
@@ -62,8 +54,6 @@ $("#title").html("<b>굵은 글씨</b>"); // HTML 변경
 ### ✅ 2. 값 가져오기/설정
 
 ```jsx
-javascript
-복사편집
 $("#input").val();          // 입력값 가져오기
 $("#input").val("입력값");  // 입력값 설정
 
@@ -72,8 +62,6 @@ $("#input").val("입력값");  // 입력값 설정
 ### ✅ 3. CSS 조작
 
 ```jsx
-javascript
-복사편집
 $(".box").css("color", "red");        // 스타일 변경
 $(".box").addClass("active");         // 클래스 추가
 $(".box").removeClass("active");      // 클래스 제거
@@ -83,8 +71,6 @@ $(".box").removeClass("active");      // 클래스 제거
 ### ✅ 4. 이벤트 처리
 
 ```jsx
-javascript
-복사편집
 $("#btn").click(function () {
   alert("버튼 클릭됨!");
 });
@@ -98,8 +84,6 @@ $(".item").hover(function () {
 ### ✅ 5. 반복문
 
 ```jsx
-javascript
-복사편집
 $(".item").each(function (index, element) {
   console.log(index, $(element).text());
 });
@@ -111,8 +95,6 @@ $(".item").each(function (index, element) {
 ## 🔄 AJAX 통신 (비동기 요청)
 
 ```jsx
-javascript
-복사편집
 $.ajax({
   url: "/api/data",
   type: "GET",
@@ -129,8 +111,6 @@ $.ajax({
 또는 축약형:
 
 ```jsx
-javascript
-복사편집
 $.get("/api/data", function (res) {
   console.log(res);
 });
